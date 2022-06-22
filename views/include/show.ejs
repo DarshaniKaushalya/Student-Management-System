@@ -1,0 +1,50 @@
+<%for(var i=0;i<users.length;i++) {%>
+    <tr>
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <a href="#" class="btn border-shadow delete" data-id=<%=users[i]._id%>>
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+
+    <!-- Card -->
+
+    <div class="col col-lg-4 card">
+        <div class="slide slide1">
+            <div class="content">
+                <div class="icon">
+                    <h2 class="card-header myheader">
+                        <%= i+1 %>
+                            <%= users[i].name %>
+                    </h2>
+                    <center>
+                        <a href="/update-user?id=<%=users[i]._id%>" class="btn border-shadow update">
+                            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                        </a>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide slide2">
+            <div class="content">
+                <div class="card-body">
+                    <div class="mytext">
+                        <p>
+                            <%= users[i].email %>
+                        </p>
+                        <p>
+                            <%= users[i].gender %>
+                        </p>
+                        <p>
+                            <%= users[i].status %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%}%>

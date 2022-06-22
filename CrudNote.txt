@@ -1,0 +1,80 @@
+npm init
+
+npm i express morgan nodemon ejs body-parser dotenv mongoose axios
+
+//we chaned word node as nodemon
+   "start": "nodemon server.js"
+
+npm start
+
+/////
+
+! - to get basic html templeate
+.container - dot is calling for class
+
+///
+main#site-main
+<main id="site-main">    
+</main>
+
+errors
+connectDB is not a function - version promlem//mongo
+TypeError: Userdb is not a constructor//mongo
+TypeError: date is not a function//todolist
+
+------------------------todo list---------------------------------------------------
+//res.send("kau");
+
+    //  var day = today.toLocaleDateString("en-US", options);
+
+    // if (currentDay === 6 || currentDay === 0) {
+    //     day = "";
+
+    //     switch (currentDay) {
+    //         case 0:
+    //             day = "Sunday";
+    //             break;
+
+    //         case 1:
+    //             day = "Monday";
+    //             break;
+
+    //         case 2:
+    //             day = "Tuesday";
+    //             break;
+    //         case 3:
+    //             day = "Wednessday";
+    //             break;
+
+    //         case 4:
+    //             day = "Thursday";
+    //             break;
+
+    //         case 5:
+    //             day = "Friday";
+    //             break;
+
+    //         case 6:
+    //             day = "Saturday";
+    //             break;
+    //         default:
+    //             console.log("Error: current day is equal to: " + currentDay);
+
+    //    }
+    //     res.write("<h1>Yeh its the weekend</h1>");
+
+
+
+
+
+    //res.render("List", { newItem: item })
+
+    // } else {
+    // res.write("<h1>It is not the week end</h1>");
+    // res.write("<h1>Boo! I have to work!</h1>");
+    // res.send();
+    //day = "WeekDay";
+    //res.render("List", { kindOfDay: day });
+    //res.sendFile(__dirname + "/index.html");
+    // }
+    // res.render("List", { kindOfDay: day });
